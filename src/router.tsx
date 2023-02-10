@@ -6,11 +6,13 @@ import Coins from "./routes/coins/Coins"
 import Coin from "./routes/coins/coin/Coin"
 import Price from "./routes/coins/coin/Price"
 import Chart from "./routes/coins/coin/Chart"
+import { basename } from "path"
 
 
 const router = createBrowserRouter([
     {
-        path : `${process.env.PUBLIC_URL}/`,
+        path : `/`,
+        
         element : <Root />,
         errorElement : <ErrorRoute />,
         children : [
